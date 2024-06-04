@@ -1,0 +1,15 @@
+Question 1: What is the minimum number of perceptrons required to solve the XOR problem, and how should they be connected?
+Answer:
+    I used 3 perceptrons each acting as a logic gate. The 1st 2 are in the hidden layer, with one behaving like an OR gate &
+    the other like a NAND gate. Both are connected/linked to 3rd perceptron, located in the output layer, which acts as an AND gate.
+
+Question 2: Devise a list of training examples to teach the perceptrons to solve the binary XOR problem. How many training examples did it
+take for your algorithm to correctly learn to solve the binary XOR problem?
+Answer:
+    I used a training data set of 12 inputs. I had initially used 4 but this wasnt enough for the ANN to learn to solve the problem. Then I used
+    8 inputs which worked, but there was still a fairly large margin of error. 12 inputs allowed the algorithm to work with minimum error.
+    my inputs: {0.0,0.0,0.0},{0.8,0.2,1.0},{0.6,0.6,0},{0.0,1.0,1.0},{0.3,0.7,1.0},{1.0,0.0,1.0},
+               {0.4,0.4,0},{1.0,1.0,0.0},{1.0,1.0,0.0},{1.0,0.0,1.0},{0.0,0.0,0.0},{0.0,1.0,1.0}.
+    The basic idea is for the XOR to produce 1 if the sum of the 2 inputs is in the range 0.9 to 1.1. Eg. input1 = 1, input2 = 0, result=1
+    or input1 = 0, input2 = 1, result=1. I tested my code using inputs (0.5, 0.4), (0.9, 0.9), (0.5, 0.6), (0.1, 0.1) which produced 1, 0,
+    1, 0 (respectively) as intended.

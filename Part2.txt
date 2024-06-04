@@ -1,0 +1,27 @@
+Question 3: Given the ANN input x, what are the output values of hidden layer neurons 1 and 2 ?
+Answer:
+    --------------------------
+            Hidden1
+
+
+    Value: 0.665967
+    --------------------------
+    --------------------------
+            Hidden2
+
+
+    Value: 0.867611
+    --------------------------
+
+Question 4: What is the output value of the output neuron?
+Question 5: Given this output, what is the Mean Squared Error for ANN input x?
+Answer to 4 & 5:
+    --------------------------
+            Output
+
+
+    Target: 0.36
+    Value: 0.750332
+    MSE: 0.152359
+    --------------------------
+    
